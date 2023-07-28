@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="into.css">
+    <style>
+        
+            form {
+                margin-top: 20px;
+                background-color: #FFF;
+                padding: 45px;
+                border-radius: 5px;
+            }
+
+            form * {
+                margin: 4px;
+                position: relative;
+                width: 100%;
+            }
+
+            form input,
+            textarea,select {
+                padding: 5px 10px;
+                font-size: 10px;
+                border: 1px solid gainsboro;
+                border-radius: 5px;
+            }
+
+            form button {
+                padding: 5px 10px;
+                background-color: royalblue;
+                border: none;
+                color: #FFF;
+                border-radius: 5px
+            }
+
+            form label,select {
+                display: flex;
+                align-items: center;
+                font-size: 10px;
+                color: gray;
+                user-select: none;
+            }
+
+            form label input,
+            form input[type='radio'] {
+                width: auto;
+            }
+
+            .d-flex {
+                display: flex;
+            }
+    </style>
+   
+</head>
+<body >
+    <header >
+       🍴Foodcook planner🍴
+       <a href="credits.html" style="color: aliceblue;background-color: royalblue; padding: 2px 10px; margin:5px;font-size: 12px; float:right; cursor:pointer; border-radius: 5px;text-decoration: none;">
+        Credit
+       </a>
+       <a href="into.html" style="color: aliceblue;background-color: royalblue; padding: 2px 10px; margin:5px;font-size: 12px; float:right; cursor:pointer; border-radius: 5px;text-decoration: none;">
+        home
+       </a>
+    </header>
+    <main id="main">
+        <div class="welcomer"></div>
+       <h4>Feedback form</h4>
+       <form  name="feedbacks">
+            <div class="fullname">
+                <input type="text" placeholder="Enter your Full Name" min="10" name="fullname" required>
+            </div>
+            <div class="d-flex" id="radiobtn">
+                <div class="d-flex" >
+                    <input type="radio" name="types" value="general-feedback" id="general-feedback" >
+                    <label for="general-feedback">general-feedback</label>
+                </div>
+                <div class="d-flex">
+                    <input type="radio" name="types" value="Technical-support" id="Technical-support">
+                    <label for="Technical-support">general-feedback</label>
+                </div>
+                <div class="d-flex">
+                    <input type="radio" name="types" value="contribution" id="contribution">
+                    <label for="contribution">contribution </label>
+                </div>
+            </div>
+            <div class="d-flex">
+                <input type="email" name="email" placeholder="Enter your @ Email Address" required>
+                <div >
+                
+                    <select name="country" id="country">
+                        <option value="select">--select country--</option>
+                        <option value="usa" >usa</option>
+                        <option value="india">india</option>
+                        <option value="uk">uk</option>
+                        <option value="japan">japan</option>
+                        <option value="russia">russia</option>
+                    </select>
+                </div>
+            </div>
+            <div class="d-flex">
+                <textarea name="textarea" id=""  rows="4" placeholder= "Enter your feedback briefly!" required></textarea>
+            </div>
+            
+            <div class="d-flex">
+                <div>
+                    <label for="singing">
+                        <input type="checkbox" name="hobbies" id="singing" value="singing">Singing 
+                    </label>
+                </div>
+               <div>
+                <label for="cooking">
+                    <input type="checkbox" name="hobbies" id="cooking" value="cooking">cooking                
+                </label>
+               </div>
+               <div>
+                <label for="reading books">
+                    <input type="checkbox" name="hobbies" id="reading books" value="reading books">reading books
+                </label>
+               </div>
+        </div>
+            <div class="d-flex">
+                <label for="check" name="chek" >
+                    <input type="checkbox"  id="check" value="accept" required>Agree with terms and conditions
+                </label>
+                
+            </div>
+            <div>
+                <button>submit</button>
+                <div  id="respose">
+                
+                </div>
+            </div>
+            
+       </form>
+       
+       
+   
+    <script src="into.js">
+    </script>
+    <script src="learning2.js">
+    </script>
+   
+</body>
+</html>

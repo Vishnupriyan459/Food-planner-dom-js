@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
     font-family: 'Poppins', sans-serif;
     
 }
 html,body{
-    background-color:rgb(195, 201, 215);
+    background-color:rgb(219, 221, 226);
 }
 /* Hearder */
 header{
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     font-size:20px ;    
     background-color: #22538c;
@@ -21,14 +22,117 @@ header{
 }
 main{
     margin:20px auto;
-    width: 800px;
+    width: 600px;
     text-align:center;
-    background-color: aliceblue;
-    padding: 30px;
+    
+    
 }
 main>div>h1{
     font-size: 18px;
 }
 main>div>p{
     font-size: 14px;
+}
+.input-food{
+    padding: 5px 10px;
+    outline:none;
+    border-radius: 5px;
+    width: 100%;
+    margin-right: 15px;
+    border: 1px solid ghostwhite;
+    background-color: #f2f2f2;
+    border-radius:5px ;
+}
+.input-button{
+    padding: 5px 10px;
+    background-color:#22538c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    border-color: darkgrey;
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 80px;
+    cursor: pointer;
+   
+   
+
+}
+.container-input{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(188, 192, 192);
+    
+}
+.food-container{
+    
+    list-style-type: none;
+    text-align: left;
+    
+
+}
+.food-container .food-item{
+    padding: 5px 10px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid rgb(213, 231, 231);
+    margin: 10px 0;
+    color: gray;
+    text-align: left;
+}
+.food-container .food-item:hover{
+    background-color: #22538c;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.alert{
+    background-color: #29a746;
+    padding: 10px 20px 10px 10px;
+    color:white;
+    font-size: 12px;
+    border-radius: 5px;
+    text-align: left;
+    border-left: 5px solid green;
+    font-weight: 500;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.alert button{
+    background: transparent;
+    border: none;
+    color:#fff;
+    cursor: pointer;
+}
+.food-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section{
+    margin:20px 0;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(213, 231, 231);
+    padding: 20px;
+}
+#nolist{
+    color:gray;
+    font-family:Poppins ;
+}
+#nolist img{
+    width: 240px;
+    opacity: 0.5;
+}
+#labellist{
+    font-size: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
 }
